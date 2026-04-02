@@ -5,13 +5,13 @@
 class CmuxResurrect < Formula
   desc "Session persistence for cmux — save, restore, and manage your terminal workspaces"
   homepage "https://github.com/drolosoft/cmux-resurrect"
-  version "1.0.3"
+  version "1.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.3/cmux-resurrect_1.0.3_darwin_amd64.tar.gz"
-      sha256 "09a9274071c67a48d16d51f407033a4be3957602655b69f8966c39f36cd4beef"
+      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.4/cmux-resurrect_1.0.4_darwin_amd64.tar.gz"
+      sha256 "f1b5e4ba2b10dc1277bd2dd30b39b88b31a70ccce43edf0abfc525fab2aba1a7"
 
       define_method(:install) do
         bin.install "crex"
@@ -19,8 +19,8 @@ class CmuxResurrect < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.3/cmux-resurrect_1.0.3_darwin_arm64.tar.gz"
-      sha256 "8fbd01cd8177ba19c57f17a921e47ad14b5176f239b77fd7e86bbb8bbac65bec"
+      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.4/cmux-resurrect_1.0.4_darwin_arm64.tar.gz"
+      sha256 "e4b6e274943ed28c8021c5dbf7ec35a908559b3138c042959712e148d1007659"
 
       define_method(:install) do
         bin.install "crex"
@@ -31,16 +31,16 @@ class CmuxResurrect < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.3/cmux-resurrect_1.0.3_linux_amd64.tar.gz"
-      sha256 "f5c50a23967a2bcc7cf28c3965034e40840149ad5cda9ad13e2ee86005fab572"
+      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.4/cmux-resurrect_1.0.4_linux_amd64.tar.gz"
+      sha256 "5aa578e22ce61c77a35faaac0519649479dd82f71ab4a3dfafe874016acd5c1b"
       define_method(:install) do
         bin.install "crex"
         bin.install_symlink "crex" => "cmux-resurrect"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.3/cmux-resurrect_1.0.3_linux_arm64.tar.gz"
-      sha256 "96a712b3ae43c6923f175e418b17f34c4f00af160e910138057dc54b090f05e1"
+      url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.0.4/cmux-resurrect_1.0.4_linux_arm64.tar.gz"
+      sha256 "beeb63f7a65b623749cd1150d213e3ee430d22b4e2b1f6a78d6de2c5325bccde"
       define_method(:install) do
         bin.install "crex"
         bin.install_symlink "crex" => "cmux-resurrect"
