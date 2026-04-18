@@ -11,7 +11,7 @@ class CmuxResurrect < Formula
 
   if Hardware::CPU.intel?
     url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.5.0/cmux-resurrect_1.5.0_darwin_amd64.tar.gz"
-    sha256 "a62cf1765493162ffd84157f649b3ad1d57ff9d7027dd43730f8576070a3fbd8"
+    sha256 "2d6d483996af02967e4c40d4e8b1057cd483de45549539a52a72fdbcbcb23a0c"
 
     define_method(:install) do
       bin.install "crex"
@@ -23,7 +23,7 @@ class CmuxResurrect < Formula
   end
   if Hardware::CPU.arm?
     url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.5.0/cmux-resurrect_1.5.0_darwin_arm64.tar.gz"
-    sha256 "a4f17d41760dd52b4769f3fc3911cfc19c1968ee8d3050ca813f10de98830248"
+    sha256 "9de39e55ca28034dfa7f614f8be7d0b1649551b3aacf1dc2c2ca4ed5780adb58"
 
     define_method(:install) do
       bin.install "crex"
