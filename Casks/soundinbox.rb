@@ -1,6 +1,6 @@
 cask "soundinbox" do
-  version "1.2.0"
-  sha256 "c7cebed543abd5d71a5e62ef354b061304451ceb6016170db79f0f5b6d74454c"
+  version "1.2.1"
+  sha256 "277c2ef4f9a2f4ef46bdc4e98dc73238f362fcc07915bb0f9103656cada19779"
 
   url "https://github.com/drolosoft/soundinbox/releases/download/v#{version}/SoundInbox-v#{version}-macOS.dmg"
   name "SoundInbox"
