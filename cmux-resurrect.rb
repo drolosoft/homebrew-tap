@@ -5,13 +5,13 @@
 class CmuxResurrect < Formula
   desc "Terminal workspace manager for cmux and Ghostty — save, restore, and template your workspaces"
   homepage "https://github.com/drolosoft/cmux-resurrect"
-  version "1.9.7"
+  version "1.9.8"
   license "MIT"
   depends_on :macos
 
   if Hardware::CPU.intel?
-    url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.9.7/cmux-resurrect_1.9.7_darwin_amd64.tar.gz"
-    sha256 "7b1993d3624acad8c2850ffd1307cbb1e49a2ebdc94072ca87808620a68c187f"
+    url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.9.8/cmux-resurrect_1.9.8_darwin_amd64.tar.gz"
+    sha256 "3d04a03e28627fa1381e771e72d34c6efb764ffe83ddcd2a3edfaad48fa80544"
 
     define_method(:install) do
       bin.install "crex"
@@ -22,8 +22,8 @@ class CmuxResurrect < Formula
     end
   end
   if Hardware::CPU.arm?
-    url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.9.7/cmux-resurrect_1.9.7_darwin_arm64.tar.gz"
-    sha256 "62010d128f8d95c3254bea5d2cde56136d7e548b9b783aba826908cef69b6203"
+    url "https://github.com/drolosoft/cmux-resurrect/releases/download/v1.9.8/cmux-resurrect_1.9.8_darwin_arm64.tar.gz"
+    sha256 "3e68e05f260d9375460f480a77f1c3e267a480c8367f38954de4f4a19e979959"
 
     define_method(:install) do
       bin.install "crex"
