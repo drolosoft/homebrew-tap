@@ -6,7 +6,7 @@
 class GoDocsMcp < Formula
   desc "MCP server that serves local documents (PDF, Office, EPUB, text, images) to LLMs"
   homepage "https://github.com/drolosoft/go-docs-mcp"
-  version "1.4.1"
+  version "1.5.0"
   license "MIT"
 
   depends_on "pandoc"
@@ -15,21 +15,21 @@ class GoDocsMcp < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.4.1/go-docs-mcp_1.4.1_darwin_arm64.tar.gz"
-      sha256 "5b96f93122ca63be52da493952c49845e9f05f1969ffe8e9e206cd9abacb7551"
+      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.5.0/go-docs-mcp_1.5.0_darwin_arm64.tar.gz"
+      sha256 "a70b63d1ccd49dfda33cebc12bf5d3ee7ae04c4202df09dc5ff861bd0e8d3843"
     else
-      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.4.1/go-docs-mcp_1.4.1_darwin_amd64.tar.gz"
-      sha256 "f0d9094337ed2a46c4e2bad17499e439f8c57b250368e228e59a0a35918bdc51"
+      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.5.0/go-docs-mcp_1.5.0_darwin_amd64.tar.gz"
+      sha256 "df09f27492ef5bcda5c80ba952fb313a145fb46cda338d5c4948a2ef6f85f74b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.4.1/go-docs-mcp_1.4.1_linux_arm64.tar.gz"
-      sha256 "a271e938fa8de6093e5f5c18c3a0a638f858472feef33d1f1cf1996cd5702a77"
+      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.5.0/go-docs-mcp_1.5.0_linux_arm64.tar.gz"
+      sha256 "d7072c342da3e68bbdc1d41f93ae8c95e854dc596b448ec1255907966dc45aee"
     else
-      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.4.1/go-docs-mcp_1.4.1_linux_amd64.tar.gz"
-      sha256 "e9c1ba78eb116a2277261b0ed1daae9212eb1a862a6d2a22f4387ddc0c149d02"
+      url "https://github.com/drolosoft/go-docs-mcp/releases/download/v1.5.0/go-docs-mcp_1.5.0_linux_amd64.tar.gz"
+      sha256 "6236a3c577d0e21f9805efa3d8de6d41c695d229bcaab3e216b76c7a722f3136"
     end
   end
 
@@ -47,6 +47,6 @@ class GoDocsMcp < Formula
     JSON
     output = pipe_output("#{bin}/go-docs-mcp", "#{request.delete("\n")}\n", 0)
     assert_match '"name":"go-docs-mcp"', output
-    assert_match '"version":"1.4.1"', output
+    assert_match '"version":"1.5.0"', output
   end
 end
